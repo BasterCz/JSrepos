@@ -1,0 +1,21 @@
+{
+  "name": "jsrepos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.js --bundle --platform=node --outfile=distro/index.ts",
+    "start": "node ./distro/index.ts",
+    "dev": "node build.js -watch -run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "estrella": "^1.3.0",
+    "esbuild": "^0.8.29"
+  },
+  "dependencies": {
+    "primes": "0.0.1"
+  }
+}
