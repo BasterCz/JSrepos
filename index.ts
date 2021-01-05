@@ -9,8 +9,8 @@ type Person = {
 //  const obj = {id: "aa", name: "aaa"}
 //  const {id, name} = obj;
 
-const createPersons = () =>{
-    const nums = primes(0,100);
+const createPersons = (max?: number) =>{
+    const nums = primes(0, max ?? 100);
     const presons : Person[] = nums.map((num, index) => {
         return{
             id: index,
