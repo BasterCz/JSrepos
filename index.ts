@@ -1,11 +1,13 @@
 import http from 'http';
+
 import primes from 'primes'
 //var http = require('http');
 type Person = {
     id: number | string;
     name: string;
 }
-
+//  const obj = {id: "aa", name: "aaa"}
+//  const {id, name} = obj;
 
 const createPersons = () =>{
     const nums = primes(0,100);
